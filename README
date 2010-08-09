@@ -1,0 +1,26 @@
+NAME
+
+    MIME::Base16 - Base16 encoder / decoder
+
+SYNOPSIS
+
+      use MIME::Base16; 
+
+      $encoded = MIME::Base16::encode($data);
+      $decoded = MIME::Base16::decode($encoded);
+
+DESCRIPTION
+
+    Encode data similar way like MIME::Base64 does.
+
+EXPORT
+
+    NOTHING
+
+AUTHOR
+
+    Stefan Gipper <stefanos@cpan.org>, http://www.coder-world.de/
+
+SEE ALSO
+
+    perl(1), MIME::Base64(3pm).
