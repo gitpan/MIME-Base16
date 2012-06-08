@@ -5,7 +5,7 @@ use strict;
 use warnings;
 
 use vars qw( $VERSION );
-$VERSION = '1.0';
+$VERSION = '1.1';
 
 sub import {
 	*encode = \&encode_base16;
@@ -28,7 +28,8 @@ sub encode_base16 {
 	my $ret = "";
 	for(my $i=0;$i<length($arg);$i+=1){
 		my $tmp = ord(substr($arg,$i,1));
-		$ret .= sprintf "%x", $tmp;
+		#$ret .= sprintf "%x", $tmp;#old
+		$ret .= sprintf "%02x", $tmp;#new
 	}
 	return $ret;
 }
