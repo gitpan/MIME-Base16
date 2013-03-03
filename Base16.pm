@@ -5,7 +5,7 @@ use strict;
 use warnings;
 
 use vars qw( $VERSION );
-$VERSION = '1.1';
+$VERSION = '1.2';
 
 sub import {
 	*encode = \&encode_base16;
@@ -58,7 +58,7 @@ NOTHING
 
 =head1 AUTHOR
 
-Stefan Gipper <stefanos@cpan.org>, http://www.coder-world.de/
+-
 
 =head1 SEE ALSO
 
